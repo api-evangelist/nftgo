@@ -1,0 +1,76 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nftgo.io/reference/nft-model + NFTgo API object reference
+notes: >-
+  Entity graph derived from NFTgo's published object-model reference pages (no
+  OpenAPI $ref graph was available to derive from). Relationships reflect the
+  documented model composition.
+entities:
+- name: NFT
+  docs: https://docs.nftgo.io/reference/nft-model
+  keys:
+  - contract_address
+  - token_id
+- name: Collection
+  docs: https://docs.nftgo.io/reference/collection-model
+  keys:
+  - contract_address
+- name: Marketplace
+  docs: https://docs.nftgo.io/reference/marketplace-model
+- name: Transaction
+  docs: https://docs.nftgo.io/reference/transaciton-model
+- name: Rarity
+  docs: https://docs.nftgo.io/reference/rarity-model
+- name: Price
+  docs: https://docs.nftgo.io/reference/price-model
+- name: Fee
+  docs: https://docs.nftgo.io/reference/fee-model
+- name: Trait
+  docs: https://docs.nftgo.io/reference/trait-model
+- name: CollectionTrait
+  docs: https://docs.nftgo.io/reference/collection-trait-model
+- name: PaymentToken
+  docs: https://docs.nftgo.io/reference/token-model
+- name: Webhook
+  docs: https://docs.nftgo.io/reference/webhook-model
+relationships:
+- from: NFT
+  to: Collection
+  kind: belongs_to
+  via: contract_address
+- from: Collection
+  to: NFT
+  kind: has_many
+  via: contract_address
+- from: NFT
+  to: Trait
+  kind: has_many
+  via: traits
+- from: NFT
+  to: Rarity
+  kind: has_one
+  via: rarity
+- from: NFT
+  to: Price
+  kind: has_one
+  via: last_price
+- from: Collection
+  to: CollectionTrait
+  kind: has_many
+  via: traits
+- from: Transaction
+  to: NFT
+  kind: belongs_to
+  via: nft
+- from: Transaction
+  to: Marketplace
+  kind: belongs_to
+  via: marketplace
+- from: Transaction
+  to: PaymentToken
+  kind: belongs_to
+  via: payment_token
+- from: Transaction
+  to: Fee
+  kind: has_many
+  via: fees

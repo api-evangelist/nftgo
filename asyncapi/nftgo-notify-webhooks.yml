@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nftgo.io/reference/verify-webhook
+spec_type: Webhooks
+product: Notify
+summary: >-
+  NFTgo's Notify product delivers real-time push notifications to a
+  developer-configured HTTPS endpoint (webhook). Notifies are managed through the
+  Notify API (create/list/update/delete) and each is bound to an API key.
+delivery:
+  transport: https-post
+  payload_model: https://docs.nftgo.io/reference/webhook-model
+security:
+  signature_header: x-signature
+  algorithm: HMAC-SHA256
+  scheme: >-
+    NFTgo signs the raw webhook body with a per-webhook signing secret using
+    HMAC SHA-256 and sends the hex signature in the x-signature header. Consumers
+    must recompute the HMAC over the raw (unparsed) body and compare using a
+    constant-time comparison.
+  docs: https://docs.nftgo.io/reference/verify-webhook
+management_operations:
+- name: List notify
+  method: GET
+  path: /notify/api/v1/notify
+  docs: https://docs.nftgo.io/reference/get_notify_notify_api_v1_notify_get
+- name: Create notify
+  method: POST
+  path: /notify/api/v1/notify
+  docs: https://docs.nftgo.io/reference/create_notify_notify_api_v1_notify_post
+- name: Update notify
+  method: PUT
+  path: /notify/api/v1/notify
+  docs: https://docs.nftgo.io/reference/update_notify_notify_api_v1_notify_put
+- name: Delete notify
+  method: DELETE
+  path: /notify/api/v1/notify
+  docs: https://docs.nftgo.io/reference/delete_notify_notify_api_v1_notify_delete
+notes: >-
+  Provider documents webhooks (Notify) but publishes no AsyncAPI document.
+  Captured as a webhook catalog; emit type Webhooks. No fabricated AsyncAPI.

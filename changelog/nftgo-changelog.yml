@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nftgo.io/changelog
+scheme: dated-entries
+docs: https://docs.nftgo.io/changelog
+entries:
+- title: 'Website: Adjusted bluechip collection list'
+  url: https://docs.nftgo.io/changelog/website-bluechip-collection-adjustment
+  breaking: false
+  area: Website
+- title: 'GoPricing API: Improved endpoints performance'
+  url: https://docs.nftgo.io/changelog/gopricing-api-improved-endpoints-performance
+  breaking: false
+  area: GoPricing
+- title: 'NFT API: Added Notify webhook endpoints'
+  url: https://docs.nftgo.io/changelog/nft-api-added-notify-webhook-endpoints
+  breaking: false
+  area: Notify
+- title: 'NFT API: Added royalty payers endpoint'
+  url: https://docs.nftgo.io/changelog/nft-api-added-royalty-payers-endpoint
+  breaking: false
+  area: NFT Data
+- title: 'NFT API: Added royalty related endpoints'
+  url: https://docs.nftgo.io/changelog/nft-api-added-royalty-related-endpoints
+  breaking: false
+  area: NFT Data
+notes: >-
+  Recent-window snapshot of the NFTgo dated changelog. The live changelog at
+  docs.nftgo.io/changelog is the source of truth.

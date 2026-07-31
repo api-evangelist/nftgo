@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/NFTGo + npm registry
+packages:
+- language: javascript
+  registry: npm
+  name: "@nftgo/gotrading"
+  version: 1.0.15
+  url: https://www.npmjs.com/package/@nftgo/gotrading
+  repository: https://github.com/NFTGo/GoTrading
+  install: npm install @nftgo/gotrading
+  description: >-
+    JavaScript/TypeScript SDK for the NFTgo trading aggregator (GoTrading) —
+    buy, list, offer, and fulfill NFTs across multiple marketplaces.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@nftgo/gorarity"
+  version: 1.0.1
+  url: https://www.npmjs.com/package/@nftgo/gorarity
+  repository: https://github.com/NFTGo/GoRarity
+  install: npm install @nftgo/gorarity
+  description: >-
+    Algorithm to calculate NFT rarity (how unique an NFT is), based on Jaccard
+    Distance.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@nftgo/mcp-nftgo-api"
+  version: 0.1.2
+  url: https://www.npmjs.com/package/@nftgo/mcp-nftgo-api
+  repository: https://github.com/NFTGo/mcp-nftgo-api
+  install: npx -y @nftgo/mcp-nftgo-api <NFTGO-API-KEY>
+  description: Model Context Protocol server exposing the NFTgo Developer API to agents.
+  official: true

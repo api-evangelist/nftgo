@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nftgo.io/reference/quickstart
+docs: https://docs.nftgo.io/reference/quickstart
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: apiKeyHeader
+  type: apiKey
+  in: header
+  parameter_name: X-API-KEY
+  description: >-
+    All NFTgo Developer API requests authenticate with a static API key sent in
+    the X-API-KEY request header. Keys are issued from the developer portal at
+    developer.nftgo.io (or nftgo.io/developers). Usage is metered in Compute Units.
+  sources:
+  - https://docs.nftgo.io/reference/quickstart
+key_management:
+  portal: https://developer.nftgo.io
+  signup: https://nftgo.io/developers
+  dealer_key_provisioning: >-
+    Dealers can mint scoped API keys for their own customers via
+    POST /api/v1/dealer/api_key (see Generate Dealer Key).

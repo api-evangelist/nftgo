@@ -1,0 +1,149 @@
+# NFTGo Documentation Documentation
+
+> NFTGo.io is an NFT data and trading aggregator platform that enables users to analyze the NFT market data and make transactions in one place. Our API supports various NFT metrics. Read on to learn more.
+
+## Guides
+- [Blue Chip Exploration](https://docs.nftgo.io/docs/blue-chip-exploration-1.md)
+- [Offer Analytics](https://docs.nftgo.io/docs/offer-analytics-new.md)
+- [Media Kit](https://docs.nftgo.io/docs/media-kit.md)
+
+## API Reference
+- [Overview](https://docs.nftgo.io/reference/introduction.md)
+- [Quickstart](https://docs.nftgo.io/reference/quickstart.md): A step-by-step guide on how to query NFT data using Javascript fetch.
+- [Compute Units](https://docs.nftgo.io/reference/compute-units.md)
+- [Supported Chains](https://docs.nftgo.io/reference/multi-chain-apis.md)
+- [How to filter out wash trades?](https://docs.nftgo.io/reference/how-to-filter-out-wash-trades.md)
+- [How to get the rarity and traits of an NFT?](https://docs.nftgo.io/reference/how-to-get-the-rarity-and-traits-of-an-nft.md)
+- [How to compress image file?](https://docs.nftgo.io/reference/image-handler.md): This doc introduce the ways to compress the NFT image file.
+- [FAQ](https://docs.nftgo.io/reference/faq-2.md)
+- [NFT model](https://docs.nftgo.io/reference/nft-model.md): The NFTGo API returns NFT data in a standard format. Here are the fields included in the response (or as a list of NFT objects).
+- [Collection model](https://docs.nftgo.io/reference/collection-model.md): The NFTGo API returns information on the collection an NFT is associated with. The following are the fields included for the collection model (appearing inline as a field on the NFT model). Currently the NFTGo API includes collections found on NFTGo.
+- [Marketplace model](https://docs.nftgo.io/reference/marketplace-model.md): The NFTGo API returns Marketplace data in a standard format. Here are the fields included in the response.
+- [Transaction model](https://docs.nftgo.io/reference/transaciton-model.md): The NFTGo API returns transaction data in a standard format.
+- [Rarity model](https://docs.nftgo.io/reference/rarity-model.md): The NFTGo API returns rarity info on an NFT is associated with.See [methodology](https://mirror.xyz/nftgoio.eth/kHWaMtNY6ZOvDzr7PR99D03--VNu6-ZOjYuf6E9-QH0) for detail.
+- [Price model](https://docs.nftgo.io/reference/price-model.md): The NFTGo API returns price data in a standard format.The historical transaction price and gas fee of nft will be returned in this format.
+- [Fee model](https://docs.nftgo.io/reference/fee-model.md): The NFTGo API returns transaction-related marketplace and royalty information.
+- [NFT Trait model](https://docs.nftgo.io/reference/trait-model.md): The NFTGo API returns trait data in a standard format
+- [Collection Trait model](https://docs.nftgo.io/reference/collection-trait-model.md)
+- [PaymentToken model](https://docs.nftgo.io/reference/token-model.md)
+- [Webhook Model](https://docs.nftgo.io/reference/webhook-model.md): The NFTGo API returns Webhook data in a standard format
+- [Get NFT by Token ID](https://docs.nftgo.io/reference/eth_v2_nft_contract_id_info.md): Return basic information about a single NFT
+- [Get NFTs by Token IDs](https://docs.nftgo.io/reference/eth_v2_nft_infos.md): Return basic information about multiple NFTs
+- [Get NFTs by collection](https://docs.nftgo.io/reference/eth_v2_collection_collection_filtered_nfts.md): Return filtered items of an NFT collection. You can select traits, sorting and listing to filter a subset of items.
+- [Get NFTs by owner](https://docs.nftgo.io/reference/eth_v3_address_nfts.md): Return address portfolio by collection given an Ethereum address and a contract address.
+- [Get NFTs by owners](https://docs.nftgo.io/reference/get_portfolio_by_collections_eth_v1_address_multi_nfts_post.md): Return address portfolio by collection given an Ethereum address and a contract address.
+- [Get metrics by NFT](https://docs.nftgo.io/reference/eth_v2_nft_contract_address_token_id_metrics.md): Return NFT metrics given the nft contract address and token id.
+- [Get NFTs by name](https://docs.nftgo.io/reference/get_collection_by_name_eth_v1_nft_name__keywords__get.md): Return NFTs by keywords, you can search NFTs by token name.
+- [Get rarity by NFT](https://docs.nftgo.io/reference/get_rarity_eth_v1_nft__contract_address___token_id__rarity_get-1.md): Return rarity ranking given a contract address and a token id.
+- [Get rarity by NFTs](https://docs.nftgo.io/reference/get_rarity_list_eth_v1_nft__contract_address__rarity_list_get-1.md): Return a list of rarity rankings given a collection contract address and a list of NFT token ids.
+- [Get contracts by owner](https://docs.nftgo.io/reference/eth_v1_address_contracts.md): Return the NFT contracts currently held by the address
+- [Get collections by owner](https://docs.nftgo.io/reference/eth_v2_address_collection.md): Return the collections currently held or sold by the address.
+- [Get metrics by collection](https://docs.nftgo.io/reference/eth_v2_collection_contract_metrics.md): Return metrics for an NFT collection given a contract address.
+- [Get collections by owners](https://docs.nftgo.io/reference/get_collections_by_owners_eth_v1_address_multi_collection_post.md): Return portfolio collection information given an Ethereum address.
+- [Get metrics by collections](https://docs.nftgo.io/reference/eth_v2_collection_multi_metrics.md): Return metrics for multi NFT contracts given a contract list.
+- [Get collection by name](https://docs.nftgo.io/reference/get_collection_by_name_eth_v1_collection_name__keywords__get.md): Return basic collection information by searching collection name. Fuzzy matching is supported.
+- [Get collection by contract](https://docs.nftgo.io/reference/eth_v2_collection_contract_address_info.md): Return basic information about a collection
+- [Get collection by opensea slug](https://docs.nftgo.io/reference/get_collection_by_opensea_slug_eth_v1_collection_opensea_slug__opensea_slug__get.md): Return basic collection information given an OpenSea slug.
+- [Get collections by collections](https://docs.nftgo.io/reference/get_collection_infos_eth_v1_collection_infos_post.md)
+- [Get floor price by collection](https://docs.nftgo.io/reference/get_collection_floor_price_by_marketplaces_eth_v1_marketplace__contract_address__floor_price_get.md): Return collection floor price for different marketplaces
+- [Get traits with stats by collection](https://docs.nftgo.io/reference/get_traits_eth_v1_collection_traits_get.md): Return traits with stats and floor price by collection.Response model is [Collection Trait model](https://docs.nftgo.io/reference/collection-trait-model).The fields of a model may be nullable under different traits.
+- [Get traits with stats by collections](https://docs.nftgo.io/reference/get_traits_by_collectins_eth_v1_collection_multi_traits_post.md)
+- [Get supported info by collection](https://docs.nftgo.io/reference/get_collection_supported_info_eth_v1_collection_supported_info_get.md): Retrieve the lists of marketplaces and rarity ranks related to all the NFTs of a collection. This can be used to filter the NFT list of a collection.
+- [Get whales](https://docs.nftgo.io/reference/get_whales_eth_v1_whale__get.md): A list of Whales. Whales: addresses with at least $1,000,000 worth of NFTs. Large amounts of money from whales might influence the market.
+- [Get metrics by address](https://docs.nftgo.io/reference/eth_v2_address_metrics.md): Return address metrics given an Ethereum address.
+- [Get related addresses](https://docs.nftgo.io/reference/get_related_addresses_eth_v1_address__address__related_addresses_get-1.md): Return a list of related addresses given an Ethereum address.
+- [Get holder(s) by NFT](https://docs.nftgo.io/reference/get_holders_by_nft_eth_v1_nft_holders_get.md)
+- [Get holders by collection](https://docs.nftgo.io/reference/get_collection_holders_eth_v1_collection__collection__holders_get.md): Retrieve all holders of a specific collection.
+- [Get holders by contract](https://docs.nftgo.io/reference/eth_v2_collection_contract_address_holders.md): Retrieve all holders of a specific NFT contract.
+- [Get holder addresses by collection](https://docs.nftgo.io/reference/get_collection_all_holders_eth_v1_collection__collection__all_holders_get.md): Return all holders' addresses of a collection given a contract address. Sort by nft_num.
+- [Get created listings of an address](https://docs.nftgo.io/reference/get_address_created_listings_eth_v1_address_listings_get.md): Return created listings of a wallet address.
+- [Get related info of created listings](https://docs.nftgo.io/reference/get_listing_related_info_eth_v1_address_listings_related_collections_get.md): Return listing related collections and markets of a wallet address.
+- [Get created offers of an address](https://docs.nftgo.io/reference/get_address_created_offers_eth_v1_address_created_offers_get.md): Return created offers of a wallet address.
+- [Get related info of created offers](https://docs.nftgo.io/reference/get_address_created_offers_related_info_eth_v1_address_created_offers_related_collections_get.md): Return created offers related collections and markets of a wallet address.
+- [Get received offers of an address](https://docs.nftgo.io/reference/get_address_receive_offers_eth_v1_address_received_offers_get.md): Return received offers of a wallet address.
+- [Get related info of received offers](https://docs.nftgo.io/reference/get_address_received_offers_related_info_eth_v1_address_received_offers_related_collections_get.md): Return received offers related collections and markets of a wallet address.
+- [Get collection transaction history](https://docs.nftgo.io/reference/get_collection_transactions_history_eth_v2_history_collection__collection__transactions_get.md): Return collection transaction history given a collection contract address
+- [Get chain transaction history](https://docs.nftgo.io/reference/get_chain_transactions_history_eth_v2_history_transactions_get.md): Return transaction history.
+- [Get NFT Transaction history](https://docs.nftgo.io/reference/get_nft_transactions_eth_v2_history_nft_transactions_get.md)
+- [Get address transaction history](https://docs.nftgo.io/reference/get_address_activities_eth_v2_history_address__address__activities_get.md)
+- [Get metrics of global market](https://docs.nftgo.io/reference/get_metrics_eth_v1_market_metrics_get-1.md): Return metrics for the overall NFT market. You can refer [here](https://docs.nftgo.io/docs/listing-criteria) to see the criteria
+- [Get collection ranking](https://docs.nftgo.io/reference/get_collection_ranking_eth_v1_market_rank_collection__time_range__get-1.md): Return collection rankings sorted by market_cap/market_cap_change/volume/floor_price/whale_num. Check https://nftgo.io/analytics/top-collections for details.
+- [Get top sales ranking](https://docs.nftgo.io/reference/get_nft_ranking_eth_v1_market_rank_nft__time_range__get-1.md): Return NFT top 100 ranking sorted by price/change/highest_price/sale. Check https://nftgo.io/analytics/top-nft-sales for details.
+- [Get NFT profit ranking](https://docs.nftgo.io/reference/get_leaderboard_eth_v1_market_rank_leaderboard_get-1.md): Return NFT profit leaderboard.
+- [Get top mints ranking](https://docs.nftgo.io/reference/get_top_mints_leaderboard_eth_v1_market_rank_top_mints__time_range__get-1.md): Return NFT top mints leaderboard.
+- [Get marketplace ranking](https://docs.nftgo.io/reference/get_marketplace_leaderboard_eth_v1_market_rank_marketplaces__time_range__get-1.md): Return NFT marketplace leaderboard.
+- [Get top sales by collection](https://docs.nftgo.io/reference/get_collection_sales_chart_eth_v1_chart_collection_sales_get.md): The top 10% sales info over the selected time range.
+- [Get royalty by NFT](https://docs.nftgo.io/reference/eth_v1_nft_contract_address_token_id_royalty.md): Return NFT royalty given the nft contract address and token id.
+- [Get royalty by collection](https://docs.nftgo.io/reference/eth_v2_collection_contract_royalty.md): Return royalty info for an NFT collection given a contract address.
+- [Get royalty by address](https://docs.nftgo.io/reference/eth_v1_address_royalty.md): Return royalty info given an Ethereum address.
+- [Get royalty chart by contract](https://docs.nftgo.io/reference/eth_v1_chart_contract_address_royalty.md): Return a chart displaying the historical royalty volumes of an NFT contract over a given time range, indexed by time. The time interval is fixed to daily.
+- [Get marketplace royalty distribution by contract](https://docs.nftgo.io/reference/eth_v1_chart_contract_address_marketplace-royalty-distribution.md): Contract royalty income breakdown by marketplace
+- [Get royalty expenses by address](https://docs.nftgo.io/reference/eth_v1_address_royalty-expenses.md): Return the royalty expense breakdown by contracts
+- [Get royalty payers by contract](https://docs.nftgo.io/reference/eth_v1_contract_contract_address_royalty-payers.md): Retrieve all royalty payers of a specific NFT contract.
+- [Refresh NFT metadata](https://docs.nftgo.io/reference/refresh_metadata_eth_v1_nft_refresh_post.md)
+- [Get holder amount distribution by collection](https://docs.nftgo.io/reference/get_holding_amount_dis_eth_v1_chart_collection_holding_amount_distribution_get.md): Holder breakdown by the number of NFTs held.
+- [Get traders chart by collection](https://docs.nftgo.io/reference/get_traders_chart_eth_v1_chart_collection_traders_get.md): The number of unique addresses that bought NFTs or sold NFTs at least once of the collection. Suspected wash trades excluded.
+- [Get holder trends chart by collection](https://docs.nftgo.io/reference/get_holder_trends_chart_eth_v1_chart_collection_holder_trends_get.md): The trends of holders, whales and Blue Chip holders of the collection over the selected time range.
+- [Get holder period distribution by collection](https://docs.nftgo.io/reference/get_holding_period_dis_eth_v1_chart_collection_holding_period_distribution_get.md): NFT holding period breakdown. *NFT holding period is the length of time held by the current holder.
+- [Get average price chart by collection](https://docs.nftgo.io/reference/get_avg_price_chart_eth_v1_chart_collection_avg_price_get.md): The average price of sales over the selected time range.
+- [Get volume chart of a collection](https://docs.nftgo.io/reference/get_volume_chart_eth_v1_collection__contract_address__chart_volume_get-1.md): Return a chart displying the historical transaction volumes of an NFT collection over a given time range, indexed by time.
+- [Get floor depth chart by collection](https://docs.nftgo.io/reference/get_floor_depth_chart_eth_v1_chart_collection_floor_depth_get.md): The breakdown of unique listings. If a NFT is listed in more than 1 marketplace, only the lowest price will be included.
+- [Get floor price chart by collection](https://docs.nftgo.io/reference/get_floor_price_chart_eth_v1_collection__collection__chart_floor_price_get.md): Return the market floor price chart data on a given time range, including a series of value x and value y. x is a timestamp in seconds and y is the floor price in corresponding time.
+- [Get listing chart by collection](https://docs.nftgo.io/reference/get_listing_chart_eth_v1_collection__collection__chart_listing_get.md): Return the number of listings chart data on a given time range, including a series of value x and value y. x is a timestamp in second and y is the number of listings in corresponding time.  If (now - end_time <= 5 minutes) and (end_time - start_time <= 6 hours), the interval between two time points will be 5 minutes, otherwise the interval will be 1 hour
+- [Get floor price OHLC chart by collection](https://docs.nftgo.io/reference/get_floor_price_chart_eth_v2_collection__collection__chart_floor_price_get.md): Return the market floor price chart data on a given time range, including a series of value x and object y. x is a timestamp in second and y is the floor price object in corresponding time.
+- [Get sales chart by contract](https://docs.nftgo.io/reference/get_sales_chart_eth_v1_chart_sales_chart__contract_address__get.md): Return collection sales chart over a time range given a contract address.
+- [Get chart of market capitalization](https://docs.nftgo.io/reference/get_marketplace_marketcap_chart_eth_v1_market_chart_marketcap_get-1.md): Return the market capitalization chart data on a given time range, including a series of value x and value y. x is a timestamp in seconds and y is the market capitalization in corresponding time.  Note: The granularity of the data increases as the time range increases
+- [Get volume chart of market](https://docs.nftgo.io/reference/get_marketplace_volume_chart_eth_v1_market_chart_volume_get-1.md): Return the market volume chart data on a given time range, including a series of value x and value y. x is a timestamp in seconds and y is the market volume in corresponding time.  Note: The granularity of the data increases as the time range increases
+- [Get chart of market capitalization by collection](https://docs.nftgo.io/reference/get_marketcap_chart_eth_v1_collection__collection__chart_marketcap_get.md)
+- [GoTrading Overview](https://docs.nftgo.io/reference/gotrading-introduction.md)
+- [Core Concepts](https://docs.nftgo.io/reference/core-concept.md)
+- [Tech Architecture](https://docs.nftgo.io/reference/tech-architecture.md)
+- [Build a Trading Aggregator](https://docs.nftgo.io/reference/create-an-nft-marketplace-with-aggregated-order-books.md): Create your trading aggregator with 3rd-party order books.
+- [Build a Marketplace](https://docs.nftgo.io/reference/create-an-nft-marketplace-with-your-own-order-book.md): Create your marketplace with your own order book, and customize market fee.
+- [Build a Gallery page](https://docs.nftgo.io/reference/build-a-nft-gallery-page.md): This guide will enable you to create an NFT Gallery page using the NFTGo API.
+- [Build a NFT detailed page](https://docs.nftgo.io/reference/build-a-nft-detailed-page.md): This guide will enable you to create an NFT detailed page using the NFTGo API.
+- [Enable Buy, List, and Offer](https://docs.nftgo.io/reference/enable-buy-list-and-offer-trading-function.md): This guide will enable you to build trading functions using the NFTGo API.
+- [Build a Profile Page](https://docs.nftgo.io/reference/get-wallet-received-best-offers.md): This guide will enable you to build a user profile page using the NFTGo API.
+- [Build a Trading bot](https://docs.nftgo.io/reference/build-a-trading-bot.md): This guide will enable you to build a trading bot using the NFTGo API.
+- [Get Orders By Contract](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-orders-by-contract.md): Query the orders by contract
+- [Get Orders By Ids](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-orders-by-ids.md): Query the orders by specific orderIds
+- [Get Received Best Offers By Wallet](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-wallet-received-best-offers.md): Retrieve the best offers received by the wallet. The returned offers are sorted in descending order by price.
+- [Get Orders By Order Hashes](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-orders-by-order-hashes.md): Query the orders by unique order hashes
+- [Get Orders By Maker](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-orders-by-maker.md): Query the orders by maker address
+- [Get Orders By NFT](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-orders-by-nft.md): Query the orders by NFT
+- [Batch Get NFT Best Listing](https://docs.nftgo.io/reference/post_orderbook-v1-orders-batch-get-nft-best-listing.md): Retrieve the best listings for multiple NFTs in a batched request
+- [Get Offers Feed By NFT](https://docs.nftgo.io/reference/post_orderbook-v1-orders-get-offers-feed-by-nft.md): This API fits the offer feed scenario for a specific NFT, you can refer to the offers feed feature in this page: https://nftgo.io/asset/ETH/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/8201. Pass the `contractAddress`, `tokenId` and `tratis` to filter all the colleciton offers, trait offers and token offers that apply.
+- [Create Listings](https://docs.nftgo.io/reference/post_trade-v1-nft-create-listings.md): Generate NFT listings and sumbit them across multiple NFT marketplaces
+- [Create Offers](https://docs.nftgo.io/reference/post_trade-v1-nft-create-offers.md): Generate NFT offers and submit them across multiple NFT marketplaces
+- [Fulfill Listings](https://docs.nftgo.io/reference/post_trade-v1-nft-fulfill-listings.md): Use this API to fulfill listings. You can not collect marketplace fee on tops of Blur listings due to Blur contract restriction. [FAQ](https://docs.nftgo.io/docs/faq-2#why-cant-i-collect-marketplace-fees-in-addition-to-blur-orders)
+- [Fulfill Offers](https://docs.nftgo.io/reference/post_trade-v1-nft-fulfill-offers.md): Use this API to fulfill offers. You can not collect marketplace fee on tops of Blur offers due to Blur contract restriction. [FAQ](https://docs.nftgo.io/docs/faq-2#why-cant-i-collect-marketplace-fees-in-addition-to-blur-orders)
+- [Cancel Orders](https://docs.nftgo.io/reference/post_trade-v1-nft-cancel-orders.md): Use this API to cancel orders (listings & offers).
+- [Post Order](https://docs.nftgo.io/reference/post_trade-v1-nft-post-order.md): Post signed order to target NFT marketplace. This API asynchronous submit the signed order to the regarding NFT marketplace and returns a unique `request_id` with with each post order request, you can check the post order result with `request_id` in https://docs.nftgo.io/reference/post_trade-v1-nft-check-post-order-results  The `request_id` for opensea, looksrare, and x2y2 is equal to `orderHash`, so you can use `request_id` to query orders except blur.  Request Id Creation Logic: opensea:Order Hash looksrare:Order Hash x2y2:Order Hash blur:custom logic nftgo:Order Hash
+- [Check Post Order Results](https://docs.nftgo.io/reference/post_trade-v1-nft-check-post-order-results.md): This API check be used to check the status of your post order (listing/offer) results. Pass in the request_ids returned by Post Order API: https://docs.nftgo.io/reference/post_trade-v1-nft-post-order.
+- [Get Blur Auth Challenge](https://docs.nftgo.io/reference/post_utils-v1-blur-get-auth-challenge.md): Use this API to obtain a Blur sign message. Once received, sign the message using the user's wallet and then submit the signature to the GetBlurAuth API.
+- [Get Collected Order Books](https://docs.nftgo.io/reference/post_orderbook-v1-meta-get-collected-order-books.md): This API returns all the third-party marketplaces' order books we have aggregated.
+- [Get Collection Trading Configuration](https://docs.nftgo.io/reference/post_collections-v1-get-contract-trade-info.md): Get contract's trade related configuration across different marketplaces.
+- [Get Offer Acceptable Time](https://docs.nftgo.io/reference/get_utils-v1-nft-contract-address-token-id-offer-acceptable-time.md): get nft offer acceptable timestamp(s).
+- [Get Blur Auth](https://docs.nftgo.io/reference/post_utils-v1-blur-get-auth.md): Submit the user's signature to this API to obtain the blurAuth. This is essential for creating or fulfilling blur orders.
+- [GoPricing Overview](https://docs.nftgo.io/reference/gopricing.md): Unlock access to real-time estimated prices of your NFTs!
+- [Algorithm Principle](https://docs.nftgo.io/reference/algorithm-principle.md)
+- [Evaluation Method](https://docs.nftgo.io/reference/evaluation-method.md)
+- [Performance Monitor](https://docs.nftgo.io/reference/performance-monitor.md)
+- [Use Cases](https://docs.nftgo.io/reference/applications-to-build-on-gopricing.md)
+- [Get estimated price](https://docs.nftgo.io/reference/get_pricing_pricing_v1_pricing_get.md): Get NFT estimated value, based on the Machine learning.
+- [Get estimated price(bulk)](https://docs.nftgo.io/reference/get_bulk_price_pricing_v1_bulk_pricing_post.md): Get NFTs estimated value, based on the Machine learning.
+- [Get trait weights by collection](https://docs.nftgo.io/reference/get_collection_weights_pricing_v1_pricing_collection_weights_get.md): Return trait weights of a collection.
+- [Notify Tutorials](https://docs.nftgo.io/reference/notify-quickstart.md): List of tutorials that use Notify
+- [Verify Webhook](https://docs.nftgo.io/reference/verify-webhook.md)
+- [List notify](https://docs.nftgo.io/reference/get_notify_notify_api_v1_notify_get.md): List all notifies belonging to an API key.
+- [Update notify](https://docs.nftgo.io/reference/update_notify_notify_api_v1_notify_put.md): Update a notify.
+- [Create notify](https://docs.nftgo.io/reference/create_notify_notify_api_v1_notify_post.md): Create a notify.
+- [Delete notify](https://docs.nftgo.io/reference/delete_notify_notify_api_v1_notify_delete.md): Delete a notify.
+- [Generate Dealer Key](https://docs.nftgo.io/reference/generate_dealer_key_api_v1_dealer_api_key_post.md): This endpoint is ONLY for dealers. Dealers can use this endpoint to generate an API key for their own customers. This API key can access our NFTGo endpoint.If you would like to become our dealer, please fill out the [form](https://byterum.feishu.cn/share/base/form/shrcnbwjP64twFL0cHPGWBmO22c).
+
+## Changelog
+- [Website: Adjusted bluechip collection list](https://docs.nftgo.io/changelog/website-bluechip-collection-adjustment.md)
+- [GoPricing API: Improved Endpoints performance](https://docs.nftgo.io/changelog/gopricing-api-improved-endpoints-performance.md)
+- [NFT API: Added Notify webhook endpoints](https://docs.nftgo.io/changelog/nft-api-added-notify-webhook-endpoints.md)
+- [NFT API: Added royalty payers endpoint](https://docs.nftgo.io/changelog/nft-api-added-royalty-payers-endpoint.md)
+- [NFT API: Added royalty related endpoints](https://docs.nftgo.io/changelog/nft-api-added-royalty-related-endpoints.md)

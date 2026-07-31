@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.nftgo.io/reference/quickstart + docs.nftgo.io API reference
+standards:
+- id: rest
+  conforms: true
+  evidence: HTTP+JSON REST API over data-api.nftgo.io with resource-oriented paths
+- id: api-key-auth
+  conforms: true
+  evidence: X-API-KEY header authentication documented in quickstart
+- id: webhooks-hmac-sha256
+  conforms: true
+  evidence: Notify webhooks signed with HMAC-SHA256 in the x-signature header
+- id: oauth2
+  conforms: false
+  evidence: No OAuth2 flows; API-key authentication only
+- id: openid-connect
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors returned as plain JSON, not application/problem+json
+- id: asyncapi
+  conforms: false
+  evidence: Webhooks documented but no AsyncAPI document published
+notes: >-
+  Derived from documented conventions. NFTgo publishes no formal compliance
+  program (SOC 2 / ISO 27001 / PCI / HIPAA) that could be found, so no
+  Compliance pointer is emitted.

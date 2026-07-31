@@ -1,0 +1,52 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nftgo.io/reference/quickstart + https://docs.nftgo.io/reference/compute-units
+authentication:
+  style: api-key-header
+  header: X-API-KEY
+  docs: https://docs.nftgo.io/reference/quickstart
+idempotency:
+  supported: false
+  notes: >-
+    NFTgo does not document an idempotency-key mechanism. Trading write
+    operations (create/fulfill/cancel listings and offers) are asynchronous and
+    return a request_id used to poll results rather than an idempotency key.
+pagination:
+  style: offset-limit
+  notes: >-
+    List endpoints accept offset and limit query parameters; some endpoints use
+    cursor tokens. Confirm per-endpoint in the API reference.
+versioning:
+  scheme: uri-path
+  notes: >-
+    Version is embedded in the request path per product surface, e.g.
+    /eth/v1, /eth/v2, /eth/v3 for data endpoints and /trade/v1, /orderbook/v1,
+    /pricing/v1, /notify/api/v1 for trading, pricing, and notify surfaces.
+rate_limiting:
+  model: compute-units
+  docs: https://docs.nftgo.io/reference/compute-units
+  notes: >-
+    Usage is metered in Compute Units (CUs) rather than fixed requests-per-second
+    limits. Each endpoint has a documented CU cost (e.g. Get NFT by Token ID = 10
+    CUs; trading operations and single pricing estimates = 1,000 CUs; wallet best
+    offers = 3,000 CUs). Many list endpoints add a per-item CU cost.
+request_tracing:
+  async_request_id: >-
+    Asynchronous trading operations (Post Order) return a request_id that can be
+    polled via Check Post Order Results.
+error_envelope:
+  format: json
+  notes: >-
+    Errors are returned as JSON with standard HTTP status codes. NFTgo does not
+    publish an RFC 9457 problem+json contract.
+webhooks:
+  supported: true
+  product: Notify
+  signature_header: x-signature
+  signature_algorithm: HMAC-SHA256
+  docs: https://docs.nftgo.io/reference/verify-webhook
+cross_links:
+  authentication: authentication/nftgo-authentication.yml
+  webhooks: asyncapi/nftgo-notify-webhooks.yml
+  changelog: changelog/nftgo-changelog.yml
+  lifecycle: lifecycle/nftgo-lifecycle.yml

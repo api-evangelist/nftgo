@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on NFTgo hosts
+hosts:
+- host: https://data-api.nftgo.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://nftgo.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+notes: >-
+  No /.well-known discovery documents were served. nftgo.io returns 403 to
+  automated clients (bot protection); data-api.nftgo.io returns 404 for the
+  probed paths. Absence recorded as valid data.

@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nftgo.io/reference/introduction
+versioning:
+  scheme: uri-path
+  current: v2
+  observed_versions:
+  - v1
+  - v2
+  - v3
+  docs: https://docs.nftgo.io/reference/introduction
+  notes: >-
+    Product surfaces version independently in the request path (eth/v1..v3,
+    trade/v1, orderbook/v1, pricing/v1, notify/api/v1).
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No published deprecation or sunset-header policy found.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+changelog: https://docs.nftgo.io/changelog
+deprecated_operations: []
+notes: >-
+  No public status page (status.nftgo.io returns 404) and no published SLA or
+  deprecation policy were found. Versioning is by URI path per product.
