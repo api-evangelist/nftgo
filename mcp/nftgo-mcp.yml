@@ -5,13 +5,13 @@ source: https://github.com/NFTGo/mcp-nftgo-api
 server:
   name: nftgoapi
   transport: stdio
-  package: "@nftgo/mcp-nftgo-api"
+  package: '@nftgo/mcp-nftgo-api'
   version: 0.1.2
   command: npx
   args:
-  - "-y"
-  - "@nftgo/mcp-nftgo-api"
-  - "<NFTGO-API-KEY>"
+  - -y
+  - '@nftgo/mcp-nftgo-api'
+  - <NFTGO-API-KEY>
   license: MIT
   auth: NFTgo API key passed as a CLI argument
   chains: Ethereum
@@ -21,9 +21,9 @@ client_config:
       nftgoapi:
         command: npx
         args:
-        - "-y"
-        - "@nftgo/mcp-nftgo-api"
-        - "NFTGO-API-KEY"
+        - -y
+        - '@nftgo/mcp-nftgo-api'
+        - NFTGO-API-KEY
 capabilities:
 - NFT collection details and listing with filtering/sorting
 - NFT asset details and listing by collection, owner, or traits
@@ -31,6 +31,10 @@ capabilities:
 - Wallet holdings and transaction history
 - Advanced and trait-based search
 - Webhooks and live data feeds for real-time updates
-notes: >-
-  Official first-party MCP server published by NFTgo (@nftgo org). Wraps the
-  NFTgo Developer API (docs.nftgo.io). Currently supports Ethereum only.
+notes: Official first-party MCP server published by NFTgo (@nftgo org). Wraps the NFTgo Developer API
+  (docs.nftgo.io). Currently supports Ethereum only.
+deployment:
+  mode: local-stdio
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
