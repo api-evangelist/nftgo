@@ -58,6 +58,11 @@ apis:
   - NFT Data
   - NFT Trading
   - NFT Pricing
+  - Webhook
+  tags_raw:
+  - NFT Data
+  - NFT Trading
+  - NFT Pricing
   - Webhooks
   properties:
   - type: Documentation
